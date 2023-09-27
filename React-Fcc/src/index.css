@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  font-style: italic;
+}
+.nav {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  padding: 2px;
+  border: 1px solid black;
+  align-items: center;
+  font-size: 1.2rem;
+  justify-content: space-between;
+}
+.logoDiv {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.navul {
+  border: 1px solid black;
+  padding: 2px;
+  list-style: none;
+  display: flex;
+}
+.navul a {
+  border: 1px solid black;
+}
+.navul li {
+  border: 1px solid black;
+  margin: 10px 15px;
+}

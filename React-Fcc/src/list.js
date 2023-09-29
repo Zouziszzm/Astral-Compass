@@ -1,38 +1,8 @@
-export const restList = [
-  {
-    name: "Kfc",
-    id: 1,
-    cuesine: ["American", "Snaks", "Biryani"],
-    distance: "6.1",
-  },
-  {
-    name: "Domnik pizza",
-    id: 2,
-    cuesine: ["Pizza", "itaslic", "Food", "Snaks", "Beverages"],
-    distance: "0.6",
-  },
-  {
-    name: "Food Planet",
-    id: 3,
-    cuesine: ["Chinese", "tqandoor", "Thali", "Fast Food"],
-    distance: "0.6",
-  },
-  {
-    name: "Burger King",
-    id: 4,
-    cuesine: [],
-    distance: "6.3",
-  },
-  {
-    name: "Annapurna andhra Mess",
-    id: 5,
-    cuesine: ["North indian", "Snaks", "South indian"],
-    distance: "1.3",
-  },
-  {
-    name: "Uncle Ji restaurant",
-    id: 6,
-    cuesine: ["South indian", "Snaks", "Beverages"],
-    distance: "0.8",
-  },
-];
+export const main = async function() {
+  const raw = await fetch(
+    "https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.9351929&lng=77.62448069999999&page_type=DESKTOP_WEB_LISTING",
+  );
+  const processed = raw.json();
+  return processed.data.cards[3].card.card.gridElements.infoWithStyle
+    .restaurants;
+};

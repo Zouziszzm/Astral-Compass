@@ -28,7 +28,7 @@ const Body = () => {
       setList(filteredList);
     }
   }
-
+  //will add a simmer effect after the conditional rendering.
   return (
     <>
       <div className="center">

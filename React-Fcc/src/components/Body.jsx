@@ -59,10 +59,10 @@ const Body = () => {
         {list.length > 0 ? (
           list.map((pre) => (
             <div className="blocks" key={pre.info.id}>
-              <h2>{pre.info.name}</h2>
-              <h3>{pre.info.cuisines.join(", ")}</h3>
-              <h4>{pre.info.cloudinaryImageId}</h4>
-              <p>{pre.info.avgRating}</p>
+              <h2>{pre?.info?.name}</h2>
+              <h3>{pre?.info?.cuisines.join(", ")}</h3>
+              <h4>{pre?.info?.cloudinaryImageId}</h4>
+              <p>{pre?.info?.avgRating}</p>
             </div>
           ))
         ) : // Display "No item found" message when no items are found

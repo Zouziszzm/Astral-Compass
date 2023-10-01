@@ -41,9 +41,7 @@ const Body = () => {
   }
   //will add a simmer effect after the conditional rendering.
   //
-  return list.length <= 1 ? (
-    <Shimmer />
-  ) : (
+  return (
     <>
       <div className="center">
         <input

@@ -6,32 +6,72 @@ import { MdOutlineAddBox, MdOutlineDelete } from "react-icons/md"; // Corrected 
 
 const BooksTable = ({ books }) => {
   return (
-    <table className="w-full border-separate border-spacing-2">
+    <table className="w-full ">
       <thead>
         <tr>
-          <th className="border border-slate-200 rounded-md">No</th>
-          <th className="border border-slate-200 rounded-md">Title</th>
-          <th className="border border-slate-200 rounded-md ">Author</th>
-          <th className="border border-slate-200 rounded-md ">Publish Year</th>
-          <th className="border border-slate-200 rounded-md ">Operations</th>
+          <th
+            className="border border-slate-200 "
+            style={{ backgroundColor: "rgba(246, 246, 246)" }}
+          >
+            No
+          </th>
+          <th
+            className="border border-slate-200 "
+            style={{ backgroundColor: "rgba(246, 246, 246)" }}
+          >
+            Title
+          </th>
+          <th
+            className="border border-slate-200 "
+            style={{ backgroundColor: "rgba(246, 246, 246)" }}
+          >
+            Author
+          </th>
+          <th
+            className="border border-slate-200  "
+            style={{ backgroundColor: "rgba(246, 246, 246)" }}
+          >
+            Publish Year
+          </th>
+          <th
+            className="border border-slate-200  "
+            style={{ backgroundColor: "rgba(246, 246, 246)" }}
+          >
+            Operations
+          </th>
         </tr>
       </thead>
       <tbody>
         {books.map((book, index) => (
-          <tr key={book._id} className="h-8">
-            <td className="border border-slate-200 rounded-md text-center">
+          <tr key={book._id} className="h-8 rounded ">
+            <td
+              className="border border-slate-200  text-center"
+              style={{ backgroundColor: "rgba(246, 246, 246)" }}
+            >
               {index + 1}
             </td>
-            <td className="border border-slate-200 rounded-md text-center">
+            <td
+              className="border border-slate-200  text-center"
+              style={{ backgroundColor: "rgba(246, 246, 246)" }}
+            >
               {book.title}
             </td>
-            <td className="border border-slate-200 rounded-md text-center">
+            <td
+              className="border border-slate-200  text-center"
+              style={{ backgroundColor: "rgba(246, 246, 246)" }}
+            >
               {book.author}
             </td>
-            <td className="border border-slate-200 rounded-md text-center ">
+            <td
+              className="border border-slate-200  text-center "
+              style={{ backgroundColor: "rgba(246, 246, 246)" }}
+            >
               {book.publishyear}
             </td>
-            <td className="border border-slate-200 rounded-md text-center">
+            <td
+              className="border border-slate-200  text-center"
+              style={{ backgroundColor: "rgba(246, 246, 246)" }}
+            >
               <div className="flex justify-center gap-x-4">
                 <Link to={`/books/dets/${book._id}`}>
                   <BsInfoCircle className="text-2xl text-cyan-200" />

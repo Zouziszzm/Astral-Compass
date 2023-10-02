@@ -47,11 +47,25 @@ const UpdateBook = () => {
       });
   };
   return (
-    <div className="p-4">
+    <div
+      className="p-4 h-screen"
+      style={{
+        backgroundImage:
+          'url("https://miro.medium.com/v2/resize:fit:720/format:webp/1*6Jp3vJWe7VFlFHZ9WhSJng.jpeg")',
+      }}
+    >
       <BackButton />
-      <h1 className="text-3xl my-4">Edit Book</h1>
+      <h1
+        className="text-3xl my-4 mx-4 p-4"
+        style={{ backgroundColor: "rgba(246, 246, 246,0.5)" }}
+      >
+        Edit Book
+      </h1>
       {loading ? <Spinner /> : ""}
-      <div className="flex flex-col border-2 border-sky-400 rounded-xl w-[600px] p-4 mx-auto">
+      <div
+        className="flex flex-col border-2 border-sky-400 rounded-xl w-[600px] p-4 mx-auto"
+        style={{ backgroundColor: "rgba(246, 246, 246)" }}
+      >
         <div className="my-4">
           <label className="text-xl mr-4 text-gray-500">Title</label>
           <input

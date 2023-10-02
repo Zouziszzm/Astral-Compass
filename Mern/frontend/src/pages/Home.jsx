@@ -29,7 +29,13 @@ const Home = () => {
       });
   }, []);
   return (
-    <div className="p-4">
+    <div
+      className="p-4 h-screen"
+      style={{
+        backgroundImage:
+          'url("https://miro.medium.com/v2/resize:fit:720/format:webp/1*6Jp3vJWe7VFlFHZ9WhSJng.jpeg")',
+      }}
+    >
       <div className="flex justify-center items-center gap-x-4">
         <button
           className="bg-sky-200 hover:bg-sky-300 px-4 py-1 rounded-lg"
@@ -44,10 +50,15 @@ const Home = () => {
           Card
         </button>
       </div>
-      <div className="flex justify-between items-center">
+      <div
+        className="flex justify-between items-center p-4 rounded-md font-bold italic m-4"
+        style={{
+          backgroundColor: "rgba(246, 246, 246, 0.5)",
+        }}
+      >
         <h1 className="text-3xl my-8">Book List</h1>
         <Link to="/books/create">
-          <MdOutlineAddBox className=" text-sky-400 text-4xl" />
+          <MdOutlineAddBox className=" text-black-400 text-4xl" />
         </Link>
       </div>
       {loading ? (

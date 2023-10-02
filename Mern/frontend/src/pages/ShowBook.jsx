@@ -2,7 +2,7 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Spinner from "../components/Spinner";
-
+import BackButton from "../components/BackButton";
 const ShowBook = () => {
   const [book, setBook] = useState({});
   const [loading, setLoading] = useState(false);
@@ -24,12 +24,27 @@ const ShowBook = () => {
 
   return (
     <>
-      <div className="p-4">
-        <h1 className="text-3xl my-4">ShowBook</h1>
+      <div
+        className="p-4 h-screen"
+        style={{
+          backgroundImage:
+            'url("https://miro.medium.com/v2/resize:fit:720/format:webp/1*6Jp3vJWe7VFlFHZ9WhSJng.jpeg")',
+        }}
+      >
+        <BackButton />
+        <h1
+          className="text-3xl my-4 mx-4 p-4"
+          style={{ backgroundColor: "rgba(246, 246, 246,0.5)" }}
+        >
+          ShowBook
+        </h1>
         {loading ? (
           <Spinner />
         ) : (
-          <div className="flex flex-col border-2 border-sky-200 rounded-xl w-fit p-4">
+          <div
+            className="flex flex-col border-2 border-sky-200 rounded-xl w-fit p-4 mx-4"
+            style={{ backgroundColor: "rgba(246, 246, 246)" }}
+          >
             <div className="my-4">
               <span className="text-xl mr-4 text-gray-500">Id</span>
               <span className="text-xl mr-4 text-gray-500">{book._id}</span>

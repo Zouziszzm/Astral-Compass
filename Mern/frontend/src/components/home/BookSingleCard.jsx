@@ -13,7 +13,7 @@ const BookSingleCard = ({ book }) => {
   return (
     <div
       className="border-2 border-gray-500 rounded-lg px-4 py-2 m-4 relative hover:shadow-xl"
-      style={{ backgroundColor: "rgba(246, 246, 246)" }}
+      style={{ backgroundColor: "rgba(246, 246, 246, 0.5)" }}
     >
       <h2 className="absolute top-1 right-2 px-4 py-1 bg-black-300 rounded-lg">
         {book.publishYear}

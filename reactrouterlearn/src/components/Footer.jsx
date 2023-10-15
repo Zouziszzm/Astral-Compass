@@ -90,7 +90,7 @@ export default function Footer() {
                   clip-rule="evenodd"
                 />
               </svg>
-              <span className="sr-only">Facebook page</span>
+              <span className="sr-only">orcut page</span>
             </Link>
             <Link to="#" className="text-gray-500">
               <svg

@@ -22,6 +22,10 @@ export default function About() {
               Nobis minus voluptatibus pariatur dignissimos libero quaerat iure expedita at?
               Asperiores nemo possimus nesciunt dicta veniam aspernatur quam mollitia.
             </p>
+            <p className="mt-4 text-gray-600">
+              Nobis minus voluptatibus pariatur dignissimos libero quaerat iure expedita at?
+              Asperiores nemo possimus nesciunt dicta veniam aspernatur quam mollitia.
+            </p>
           </div>
         </div>
       </div>

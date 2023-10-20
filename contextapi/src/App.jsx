@@ -1,9 +1,10 @@
+import Usercontectprovider from "./contex/Usercontectprovider";
 function App() {
   return (
     <>
-      <div>
-        <h1>App</h1>
-      </div>
+      <Usercontectprovider>
+        <h1>Alfarhaan</h1>
+      </Usercontectprovider>
     </>
   );
 }

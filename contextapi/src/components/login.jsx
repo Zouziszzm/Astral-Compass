@@ -2,19 +2,18 @@ import React from "react";
 import { useContext, useState } from "react";
 import userContext from "../contex/usercontext";
 
-const login = () => {
+const Login = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
-  const { setuser } = useContext(userContext);
+  const { setUser } = useContext(userContext);
 
   const handelSubmit = (e) => {
     e.preventDefault();
-    setuser({ username, password });
+    setUser({ username, password });
   };
   return (
     <>
-      <div>login</div>
       <input
         type="text"
         placeholder="username"
@@ -36,4 +35,4 @@ const login = () => {
   );
 };
 
-export default login;
+export default Login;

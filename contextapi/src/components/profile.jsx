@@ -1,20 +1,12 @@
 import React, { useContext } from "react";
 import userContext from "../contex/usercontext";
-
-const profile = () => {
+import Login from "./login";
+const Profile = () => {
   const { user } = useContext(userContext);
 
-  if (!user)
-    return (
-      <>
-        <div>please login</div>
-      </>
-    );
-  return (
-    <>
-      <div>Welcome</div>
-    </>
-  );
+  if (!user) return <div>please login</div>;
+
+  return <div>welcome {user.username}</div>;
 };
 
-export default profile;
+export default Profile;
